@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Toskana Rundreise 22.10.–30.10.2026</title>
+<style>
+  :root{
+    --terracotta:#c1573a;
+    --olive:#6b7a4a;
+    --gold:#b8862f;
+    --dark:#2b2118;
+    --cream:#faf6ef;
+    --grey:#6f6a62;
+    --line:#e3ddd0;
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0;
+    font-family: 'Segoe UI', Helvetica, Arial, sans-serif;
+    background:var(--cream);
+    color:var(--dark);
+    line-height:1.5;
+  }
+  header{
+    background:linear-gradient(135deg, var(--terracotta), var(--gold));
+    color:white;
+    padding:40px 24px 32px;
+    text-align:center;
+  }
+  header h1{
+    margin:0 0 6px;
+    font-size:2.2rem;
+    letter-spacing:0.5px;
+  }
+  header p{
+    margin:0;
+    font-size:1.05rem;
+    opacity:0.95;
+  }
+  .route-link{
+    display:inline-block;
+    margin-top:18px;
+    background:rgba(255,255,255,0.18);
+    border:1px solid rgba(255,255,255,0.6);
+    color:white;
+    padding:10px 20px;
+    border-radius:30px;
+    text-decoration:none;
+    font-weight:600;
+    font-size:0.95rem;
+    transition:background 0.2s;
+  }
+  .route-link:hover{ background:rgba(255,255,255,0.32); }
+
+  .container{
+    max-width:880px;
+    margin:0 auto;
+    padding:24px 20px 60px;
+  }
+
+  .map-overview{
+    border-radius:14px;
+    overflow:hidden;
+    box-shadow:0 6px 18px rgba(0,0,0,0.12);
+    margin-bottom:36px;
+    border:1px solid var(--line);
+  }
+  .map-overview iframe{
+    width:100%;
+    height:360px;
+    border:0;
+    display:block;
+  }
+
+  .day{
+    background:white;
+    border-radius:14px;
+    overflow:hidden;
+    box-shadow:0 4px 14px rgba(0,0,0,0.07);
+    margin-bottom:28px;
+    border:1px solid var(--line);
+  }
+  .day-header{
+    padding:18px 24px;
+    color:white;
+  }
+  .day-header h2{
+    margin:0;
+    font-size:1.4rem;
+  }
+  .day-header span{
+    font-size:0.9rem;
+    opacity:0.9;
+  }
+  .day-body{
+    padding:20px 24px 24px;
+  }
+  .bg-florence{ background:var(--terracotta); }
+  .bg-siena{ background:var(--olive); }
+  .bg-pienza{ background:var(--gold); }
+  .bg-coast{ background:var(--terracotta); }
+  .bg-departure{ background:var(--dark); }
+
+  .transfer{
+    font-size:0.95rem;
+    color:var(--grey);
+    margin-bottom:16px;
+    padding-bottom:14px;
+    border-bottom:1px dashed var(--line);
+  }
+  .transfer b{ color:var(--dark); }
+
+  .section-label{
+    font-weight:700;
+    font-size:0.8rem;
+    letter-spacing:1px;
+    text-transform:uppercase;
+    color:var(--olive);
+    margin:18px 0 8px;
+  }
+
+  .photo-grid{
+    display:grid;
+    grid-template-columns:repeat(3, 1fr);
+    gap:8px;
+    margin-bottom:10px;
+  }
+  .photo-grid img{
+    width:100%;
+    height:120px;
+    object-fit:cover;
+    border-radius:8px;
+    background:#eee;
+  }
+  .photo-grid a:hover img{ transform:scale(1.03); }
+  .photo-grid img{ transition:transform 0.2s; }
+
+  .place-block{ margin-bottom:22px; }
+  .place-name{
+    font-weight:700;
+    font-size:1.05rem;
+  }
+  .place-name a{
+    color:var(--dark);
+    text-decoration:none;
+    border-bottom:2px solid var(--terracotta);
+  }
+  .place-desc{
+    font-size:0.92rem;
+    color:#4a443c;
+    margin:4px 0 2px;
+  }
+
+  .maps-btn{
+    display:inline-block;
+    margin-top:4px;
+    font-size:0.82rem;
+    color:var(--terracotta);
+    text-decoration:none;
+    font-weight:600;
+  }
+  .maps-btn:hover{ text-decoration:underline; }
+
+  footer{
+    text-align:center;
+    color:var(--grey);
+    font-size:0.85rem;
+    padding:20px;
+  }
+
+  @media (max-width:600px){
+    header h1{ font-size:1.6rem; }
+    .photo-grid{ grid-template-columns:repeat(2,1fr); }
+    .day-header h2{ font-size:1.2rem; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>🇮🇹 Toskana Rundreise</h1>
+  <p>22.10. – 30.10.2026 · Florenz → Siena → Pienza → Küste (Forte dei Marmi) → Pisa</p>
+  <a class="route-link" href="https://www.google.com/maps/dir/Pisa+Airport/Florence,+Italy/Siena,+Italy/Pienza,+Italy/Forte+dei+Marmi,+Italy/Pisa+Airport" target="_blank">📍 Gesamte Route auf Google Maps öffnen</a>
+</header>
+
+<div class="container">
+
+  <div class="map-overview">
+    <iframe loading="lazy" src="https://www.google.com/maps?q=Val+d'Orcia,+Tuscany,+Italy&z=8&output=embed"></iframe>
+  </div>
+
+  <!-- FLORENZ -->
+  <div class="day">
+    <div class="day-header bg-florence">
+      <h2>Florenz</h2>
+      <span>22.10. – 24.10.2026</span>
+    </div>
+    <div class="day-body">
+      <div class="transfer"><b>🚗 Transfer:</b> Flug 09:20 Uhr Eindhoven → Pisa, danach Mietwagen nach Florenz (ca. 85 km, 1 Std. 15 Min.)</div>
+
+      <div class="section-label">🏨 Unterkunft</div>
+      <div class="place-block">
+        <div class="photo-grid">
+          <a href="https://maps.google.com/?cid=1324618888940575001" target="_blank"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjBYrE0bOjXSc8vWFTTYpk1o1NkNaOK5n3WiOxkUswybqeuyAf3Jyg5jleg592VB3S_0ETdDX-jjw8KOtvf3H_xsE9r_xiMxjeLF2vyqzXZ4WA7Ra4rFsbj34Ds5GcDzQkUi3wI5wQwcfzKvwEQ=s800-w800-h600" alt="Classic Hotel"></a>
+          <a href="https://maps.google.com/?cid=1324618888940575001" target="_blank"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjDX3TOtP8Tvjfa2QPaW6xpwpdBf3qI5jOA2q4pj73m_3D1q_SQ1OkCu-pCqqizXMtVLQ6wREqqF4OgGeogOVyEOTtUjaa36R72udyyJB9FUaRBu9jtWNOSqohlXitqqdgYpInDjIeN46V2MIp4=s800-w800-h600" alt="Classic Hotel"></a>
+          <a href="https://maps.google.com/?cid=1324618888940575001" target="_blank"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjCjIozNTtKNegUtxwpuq-wHFFmEVE0JEHGS5PNrlpGww15kcUyhZnmM7qrgf-bVihehp9oxhM9TKPBj-HrApjdeC7kODyqwFQffmL_G_KXRP-HURXZvBVzuyghUBrc9hAEmiK11E-D8aYJcVck=s800-w800-h600" alt="Classic Hotel"></a>
+        </div>
+        <div class="place-name"><a href="http://www.classichotel.it/" target="_blank">Classic Hotel</a></div>
+        <div class="place-desc">Viererzimmer, inklusive Frühstück.</div>
+        <a class="maps-btn" href="https://maps.google.com/?cid=1324618888940575001" target="_blank">📍 Auf Google Maps ansehen</a>
+      </div>
+
+      <div class="section-label">📸 Sightseeing</div>
+
+      <div class="place-block">
+        <div class="photo-grid">
+          <a href="https://maps.google.com/?cid=6165783601337790965" target="_blank"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjBQhMHd58tsOulGUf1j2ZhGzJLQm-XIUmiTIrl6ANupdZYnRjWOVSTiSOiOU12t7_6QQtrLwXFhna5P6ZAerHPw-ElPRokEakVV3d1QwMdoKVc9uf3O7iO3k2qbFggqWk-aQtNNBbnCHMZQaig=s800-w600-h600" alt="Duomo Florenz"></a>
+          <a href="https://maps.google.com/?cid=6165783601337790965" target="_blank"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjDCcNT7fTCxeeoUuc2VjGJ6vL6gVF7LswThdp7nJUezycBySSh1hrvIEEggAD_-co1ma8Pasqi-0DJW3q3ZOLZeaBll9XyjBI_MdV7y75SKjBx9t6By7OXk1o0uVWt6uHNcZfD8CPJteW3E=s800-w800-h600" alt="Duomo Florenz"></a>
+          <a href="https://maps.google.com/?cid=6165783601337790965" target="_blank"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjB66m632PDDKWW7bMEX0Ozl4Gi6nxw0BlSAgG9O2qHsSBBqaVokeGoYZfNfJevTTl5dpip5hbp2-dUAPC6Nis5rY-B_nbDQIPDAXClsN0FU3_AY38Xf_Wgezuj9YQm7bV1SjFjbEbaSNRcb4g=s800-w800-h600" alt="Duomo Florenz"></a>
+        </div>
+        <div class="place-name"><a href="https://maps.google.com/?cid=6165783601337790965" target="_blank">Kathedrale Santa Maria del Fiore (Duomo)</a></div>
+      </div>
+
+      <div class="place-block">
+        <div class="photo-grid">
+          <a href="https://maps.google.com/?cid=4625490284655346408" target="_blank"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjAjtpygvpXgWmaD0HyET_vOP2VBfs70f-m9nwYKPueiEsY30BpwXsq7OU49_NrRGxzYH7f4AKn90er6Eb61O5wy9sJzWKO-ihdiHE9IuHcdmwL429ERxkseyz1sta2PZBWUAKrsYMVBWQZgpw=s800-w800-h600" alt="Ponte Vecchio"></a>
+          <a href="https://maps.google.com/?cid=4625490284655346408" target="_blank"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjA-Vz2rtgBTz875X97adzeYljZbTiRC_EEFdPUrixGUACv2NhfsRy_cAQbXQ9MLKN0cv20j9IUb-rAmZSWK5eJj7U90NxN-ZIn1vXLn8sWRCjUG2-KGlg8Rn7agXnJEstIal2wQnWRftwv74Q=s800-w800-h600" alt="Ponte Vecchio"></a>
+          <a href="https://maps.google.com/?cid=4625490284655346408" target="_blank"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjBZ-KUzq2xNjbung9X4Pk4W79s5chDMX0-THzPqkogneZdo-l_T6fbrOdworJHo-xwcfzeBvO9XchhXxNI1emZwhPs80xgLgBXOGpU5Pzidn3EukmiQL9mijV3ag5a8gRzWuyzlGy3UBb1fgw=s800-w800-h600" alt="Ponte Vecchio"></a>
+        </div>
+        <div class="place-name"><a href="https://maps.google.com/?cid=4625490284655346408" target="_blank">Ponte Vecchio</a></div>
+      </div>
+
+      <div class="place-block">
+        <div class="photo-grid">
+          <a href="https://maps.google.com/?cid=14834496294842582221" target="_blank"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjDNrFlMX8Qu8WvWJH0qjBL-H0H9DdzBpabR8VQPHTX7abGhw7AoljTMq3cXyPaLX0DKeDwFXKODewtgiUEOFj5MFyz3FMLjFEXiJZXmEVp9mogDxPPFAw_Y7E9Cp2SL779RccqTk2mzUmoRPQ=s800-w720-h600" alt="Uffizien"></a>
+          <a href="https://maps.google.com/?cid=14834496294842582221" target="_blank"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjBryoIMEyQ8770i-RGr7EqUwT1H4LQUu9QUyy9u3CBvklZqR1ZfBF2k02nEZucz6o_8Fk1-hDYWF8vSK8f0Kx2_th0DcCTdsFe7i82xfiVqAd-kUdux1-GPXsO3qsfAAH1555VyQtStSPG2gg=s800-w800-h600" alt="Uffizien"></a>
+          <a href="https://maps.google.com/?cid=14834496294842582221" target="_blank"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjCOqIBDSNf5hkaFsAvszBpihpANhyxwiEUEpruWZp-uD63H4xQ8fWKz-YK5mU0870i9_rWgjrJOnzTIr9oQ_dYDLIjlR-EypdIEJZzlBf6t3HeFzeojMWBxo2x-bMbfsuzMbt5YhtJOXD14ECk=s800-w762-h600" alt="Uffizien"></a>
+        </div>
+        <div class="place-name"><a href="https://maps.google.com/?cid=14834496294842582221" target="_blank">Uffizien</a></div>
+        <div class="place-desc">Vorherige Reservierung empfohlen</div>
+      </div>
+
+      <div class="place-block">
+        <div class="photo-grid">
+          <a href="https://maps.google.com/?cid=13040006563833401625" target="_blank"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjBNxOzg919oTxEGePDNuD---A_O5LYMc8ctvkuPTbfJs_xkh9VmXmibv6z911eH80VjqG9UZWl7mw3aiogM6x0Zo-QjMxGz9Md-p6eTl-FYiWo4Oty7_s-t9PCdzUmjKuG2q_HaOOw8VmxGGw=s800-w800-h600" alt="Piazzale Michelangelo"></a>
+          <a href="https://maps.google.com/?cid=13040006563833401625" target="_blank"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjBNEOKfFlUg23Ct6VwxJcYYgscAuaKgnj2V6yJPfBTYnuX3lBmbmUkmH_ZnujDHQERJHndnb8rFgvHrQGXOJZYb1CK9XY60w_QSSbr1Ksg5LQrjEDYdrbN9HxCvhuqAeQ-5exdbtJVQLcMJeg=s800-w800-h600" alt="Piazzale Michelangelo"></a>
+          <a href="https://maps.google.com/?cid=13040006563833401625" target="_blank"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjAF26uw04OhgJuE_GAd6wg13_pU55I_ey0Pn0V6R3TplKbflVwBFgcyfMrrmSFxWr6Jp880p2EH3Af2tuWJ-C7v1b0_w63af66w2514KDqF4RzKkM5VS4F_zJI33fyAsky-pxtoPXHSnjX0f2IAUDLn1w=s800-w800-h600" alt="Piazzale Michelangelo"></a>
+        </div>
+        <div class="place-name"><a href="https://maps.google.com/?cid=13040006563833401625" target="_blank">Piazzale Michelangelo</a></div>
+        <div class="place-desc">Bester Sonnenuntergangsblick über die Stadt</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SIENA -->
+  <div class="day">
+    <div class="day-header bg-siena">
+      <h2>Siena</h2>
+      <span>24.10. – 25.10.2026</span>
+    </div>
+    <div class="day-body">
+      <div class="transfer"><b>🚗 Transfer:</b> Fahrt von Florenz nach Siena nach dem Frühstück (ca. 75 km, 1 Std. 15 Min.)</div>
+
+      <div class="section-label">🏨 Unterkunft</div>
+      <div class="place-block">
+        <div class="photo-grid">
+          <a href="https://maps.google.com/?cid=9997815061610812566" target="_blank"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjC28whyVIDi3_X3TMndwybJCQ2X39TzHTdj1ci4xWanBmCuDUfQ5WwqpGj2XasNwjejzUqnQNa6N4OjPRSIQHey4pOK2_CKE7DbJml1w7_ElRB9qzGa4t8R3AxonuXb1WJpbklvYm5ZziualSs=s800-w680-h580" alt="Hotel Palazzo dei Priori"></a>
+          <a href="https://maps.google.com/?cid=9997815061610812566" target="_blank"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjAovEAsQSsYjSOMmWGM_G0fYswxd3KD0U6O4lZl1_Qs37xtUkNtG6f6yuNh-alfvCENcCJsguNiuOKCunlbi_YaOBl28a30DIx3hPMExrYNihchRjZH1m9IKm-SLaQMypNoRtIWynVgWjxS=s800-w800-h600" alt="Hotel Palazzo dei Priori"></a>
+          <a href="https://maps.google.com/?cid=9997815061610812566" target="_blank"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjDbZhNKL8nV1ECEDle7hHkJtBIazj_IgODTJCkR6iR245TmDVphjK0NaYmu_unlgJLOshun-H6MaLwMyzflpqXQKP04owz2stFKHZfVeLVX-rEnlhcLA6pWYLKtn_yH_23em6Uv67Ftcrbg3mM=s800-w800-h600" alt="Hotel Palazzo dei Priori"></a>
+        </div>
+        <div class="place-name"><a href="http://www.palazzodeipriori.it/" target="_blank">Hotel Palazzo dei Priori</a></div>
+        <div class="place-desc">2 Doppelzimmer, inklusive Frühstück.</div>
+        <a class="maps-btn" href="https://maps.google.com/?cid=9997815061610812566" target="_blank">📍 Auf Google Maps ansehen</a>
+      </div>
+
+      <div class="section-label">📸 Sightseeing</div>
+
+      <div class="place-block">
+        <div class="photo-grid">
+          <a href="https://maps.google.com/?cid=5092226682825343578" target="_blank"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjAuhk33OFyy-92Pq1I6HvLF3mrkmXISku23Wl62csYWxUeawB9tcN50q99kEp46kJL-7TiGp5L-yylSJxkrz81uHzw535CPAuG7UvDEbVDj9kQPipqGastqsW3BxUwKhPmgqdTHGI7Q0OgyGlz-fY6roQ=s800-w800-h600" alt="Piazza del Campo"></a>
+          <a href="https://maps.google.com/?cid=5092226682825343578" target="_blank"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjDYjJKhVk-SVJ32oaXAQZOxWfM_wc8odyi3rLV_aC-1llsaz9pMTbyw2-K2xDGndDVOAG4lbofwKc-6PLtpxFFOJ0i4Z-d7paFvXdugN1rcrmB1cbrmtfWK35r71rS_gTnYgDXz00Lb5GUpiW8=s800-w800-h600" alt="Piazza del Campo"></a>
+          <a href="https://maps.google.com/?cid=5092226682825343578" target="_blank"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjAsBfGN5YsSMHu9F6u_dxtMD0ZVvQXNeeFtNQgPw2KeK6U1dcqjjbUQSwowpxMXghaiK1fHMU79GAp8r_dNi1A0YjY6jF-hliBA50ns9wHEosDD54krTq28eg-TnrXvQeu6HpnWim5ZZBTo7Q=s800-w800-h600" alt="Piazza del Campo"></a>
+        </div>
+        <div class="place-name"><a href="https://maps.google.com/?cid=5092226682825343578" target="_blank">Piazza del Campo</a></div>
+        <div class="place-desc">Mittelalterlicher Hauptplatz</div>
+      </div>
+
+      <div class="place-block">
+        <div class="photo-grid">
+          <a href="https://maps.google.com/?cid=5907906346753187397" target="_blank"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjBpM-q9kXAJdwOFg-aKaHqxBCfsnJlzslYtDN5l3HdfaTJvDiILsPMu76meiKTKCj09D3CQYUFZ9wLt_XP6_OqJKEDAtJ31BVStLm6TCRW-EHpBBgVuoNzRtsovB9GStk9vJiwFQLXcBMvGwOOSKOaI6A=s800-w800-h600" alt="Dom von Siena"></a>
+          <a href="https://maps.google.com/?cid=5907906346753187397" target="_blank"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjCfSaKi9BGrSWkokNKrIMSS2l1mybg4XfpnLlZ-tEJQfinTB5ooFevwvJr-PWwdZfa3aqvhwwSQY00iIhvfLu4leZ9SZalSidLpw5RjlLqmR82aki5K2U1qdb8dwzNCgE2TUtzJUkHtXZ80l2Y=s800-w800-h600" alt="Dom von Siena"></a>
+          <a href="https://maps.google.com/?cid=5907906346753187397" target="_blank"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjAn2j45yNYCJrLUYw78dnsd9A7uPTcaTWaR8odtds_bUc1baLuYvfUejfJhbYUDuP21-A5rvRchUNqUElFmhQlvQTM0m7UIg8bx-fodBij0fGBlNjsEuXVKBSJY2VLQTmj3x3vJgnGcC73LAOnHGf9A=s800-w800-h600" alt="Dom von Siena"></a>
+        </div>
+        <div class="place-name"><a href="https://maps.google.com/?cid=5907906346753187397" target="_blank">Dom von Siena</a></div>
+        <div class="place-desc">Beeindruckende Marmorböden</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- PIENZA -->
+  <div class="day">
+    <div class="day-header bg-pienza">
+      <h2>Pienza</h2>
+      <span>25.10. – 26.10.2026</span>
+    </div>
+    <div class="day-body">
+      <div class="transfer"><b>🚗 Transfer:</b> Fahrt von Siena nach Pienza nach dem Frühstück (ca. 55 km, 1 Std.)</div>
+
+      <div class="section-label">🏨 Unterkunft</div>
+      <div class="place-block">
+        <div class="photo-grid">
+          <a href="https://maps.google.com/?cid=12946468653589828679" target="_blank"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjA-GGCyCP5gqdp6MdO4cfnKzpGC2UkNMUr6F6jBCXiQ_OOc0zHhfnVNM4ciRKGMyjw_e2bmtfZedRpPvOJACk86DEggcaAOPnFyfob7vykXAtIsCvLLh3Sok7fsO3MkLG-eZko4XK3RhoE=s800-w800-h600" alt="Albergo Angiolino"></a>
+          <a href="https://maps.google.com/?cid=12946468653589828679" target="_blank"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjBSgfsF3w-ks3xRJAC3bYuaXAh8om6M685_xZQPqZIONluw0YB1ONjBLC8a9bYYEyO7dlfY7DfsXW5ykvZdrwVSA59xeB0r5bo2OMeEY3OlTFONu0RQ5tXLu7GyLhfahRkNyFfn7dW6rCVcoQ=s800-w800-h600" alt="Albergo Angiolino"></a>
+          <a href="https://maps.google.com/?cid=12946468653589828679" target="_blank"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjD0t8H6ReA0Zr-i04wqyo_XhvsvT0UxNQ4_3WuDNJaCcb51y8TNc1icPpwK46sj4aAxnHmoMsAe3FdLv4v0NosfofeCq6vQaorM85W4AaoSr0zzcsrNaSHkXzmmMbaiZjaOnyJ4hPNz2pjoeQ=s800-w800-h600" alt="Albergo Angiolino"></a>
+        </div>
+        <div class="place-name"><a href="http://hotelangiolino.it/" target="_blank">Albergo Angiolino</a></div>
+        <div class="place-desc">2 Doppelzimmer, inklusive Frühstück.</div>
+        <a class="maps-btn" href="https://maps.google.com/?cid=12946468653589828679" target="_blank">📍 Auf Google Maps ansehen</a>
+      </div>
+
+      <div class="section-label">📸 Sightseeing</div>
+
+      <div class="place-block">
+        <div class="photo-grid">
+          <a href="https://maps.google.com/?cid=8785458314951924931" target="_blank"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjC9wNrQ0ewYL8_jZ_EvAvTu1b9oWp-zAYQHgncwWbp-hxTCVUwA_9CKiAsxtmbkgTwogAfzWN9au9c8AuZocM50hNIV74BgMV1cVIYddlwZHgOXN89ZZBisMqeNe3_9pJm1obUayTtEKxGu32uuKLf0=s800-w800-h600" alt="Val d'Orcia"></a>
+          <a href="https://maps.google.com/?cid=8785458314951924931" target="_blank"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjDSwRDYXAHNehHsQ25I5i7SxBCagm-z4h0Asl9Cu--MSnRDYVgEASAGyYKxlRXS8S-IEan3ofntB3J-iyR3pT9RFWN8Py-D7vG6dvcj5LuGh_BvcsWKHj4I28yhvLJ-Lxq3uIYR-Ibr6OSqq2VOu6SE=s800-w800-h600" alt="Val d'Orcia"></a>
+          <a href="https://maps.google.com/?cid=8785458314951924931" target="_blank"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjD5b-U2qagu2Fvg8ZzDO0tnwJSq4xs6P_SpkL5VUJcxHNAc5KIBVaia-e_4tRGBQCJ4eTMeTXfwovbM86qhNVBI-Gp1nRHHE4jBPvhdcXLCyuwkka0Blh0761tcQhQNDnD6xFP5_hrSW1R9fbd28Jx8BQ=s800-w800-h600" alt="Val d'Orcia"></a>
+        </div>
+        <div class="place-name"><a href="https://maps.google.com/?cid=8785458314951924931" target="_blank">Panoramablick Val d'Orcia</a></div>
+        <div class="place-desc">UNESCO-Welterbe, toller Sonnenuntergang</div>
+      </div>
+
+      <div class="place-block">
+        <div class="photo-grid">
+          <a href="https://maps.google.com/?cid=13245937529831609309" target="_blank"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjAENlXCks0WMplxyuBiwFCcM9ynvi8ZkJXuLqOMIqXA1MVgxy7R-V3C7AcGvcxQc194ioTinfpi89UyxkFoK8Nabz3FlocjX3jXkVDmHeWD4APuNtiGAhFq4wk5YEUi45GAR68gGsPbhV73xzSQXJKUZw=s800-w800-h600" alt="Palazzo Piccolomini"></a>
+          <a href="https://maps.google.com/?cid=13245937529831609309" target="_blank"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjCJet02fIpV3qa8iJu9xbV0tdnMFlIQnJMNbHPyPYfA8t32pD0EjN4N2L8tagYrmPeAc93KWI2QQ3BF_IEkfMz6cq73qoc7TN1-aPGvn5LMaQ4EGkiKir0IJLA_L4NC8cayUF09-vHiYNDUryYSdoibLQ=s800-w800-h600" alt="Palazzo Piccolomini"></a>
+          <a href="https://maps.google.com/?cid=13245937529831609309" target="_blank"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjDWzombLXUt4c7cjU1k6tq_GMjaeXUrqMCAywcgvHCOJGohprLgGPbYkgScn9BaqAvehNhpU2W2IP-NN2DulAk1j0dW5g9dbpBka_qKmdNkmBECmLN6FHGUkxtN-Lrghq9OHkh2UM7yaosa7vHs-bakuw=s800-w800-h600" alt="Palazzo Piccolomini"></a>
+        </div>
+        <div class="place-name"><a href="https://maps.google.com/?cid=13245937529831609309" target="_blank">Historische Gassen & Palazzo Piccolomini</a></div>
+        <div class="place-desc">Das "ideale Renaissance-Städtchen"</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- KÜSTE -->
+  <div class="day">
+    <div class="day-header bg-coast">
+      <h2>Küste & Kultur: Forte dei Marmi</h2>
+      <span>26.10. – 30.10.2026</span>
+    </div>
+    <div class="day-body">
+      <div class="transfer"><b>🚗 Transfer:</b> Fahrt Richtung Küste nach dem Frühstück (ca. 180 km, 2 Std. 15 Min.)</div>
+
+      <div class="section-label">🏨 Unterkunft</div>
+      <div class="place-block">
+        <div class="photo-grid">
+          <a href="https://maps.google.com/?cid=12756505263893854947" target="_blank"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjDjzXqSu4vUtYmkHzjY3Rvisv35n7pQ8enXHIlW5FhWnqk104HiPv0VUfd-ofZS_AVJk967SWMs_eIWOzRdjCK_SY91k2K7GUx35JWexsoeBngVRPkYFgXbNbkLOyx8bXcFB2SykmrLvK9ZOt6w5RO3GQ=s800-w800-h600" alt="Hotel Acapulco"></a>
+          <a href="https://maps.google.com/?cid=12756505263893854947" target="_blank"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjAhI4AMOGgQXcO7k1CropyGb-_b5Cth63jKfW9N8_DzMkhhUjai_Wt7ZHupi-5ALciockoBurYioptJMy4Eg0NwzVVh05PL1IYcXYrrhmrJzrdkmtFXIxBI4gF4hl1LxNybifcDNE2q5xnFHYpxTn7C1w=s800-w800-h600" alt="Hotel Acapulco"></a>
+          <a href="https://maps.google.com/?cid=12756505263893854947" target="_blank"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjA7LOZIdS3oLl5uVL9TtYnuxZRhJu5l76r0Nf4c57ClulWQ3Ylvry4GcRg7e3KOQMEvdUi2xATXvgikmNyGAiPyJPtbk3asJQ6CQ6N2skmXnP-O6lzwyZ_XS9rcAdcElsyaxbT6zfvBJsGEwA=s800-w800-h600" alt="Hotel Acapulco"></a>
+        </div>
+        <div class="place-name"><a href="https://www.hotelacapulco.it/" target="_blank">Hotel Acapulco 4 Stars</a></div>
+        <div class="place-desc">
+          Family-Superior-Zimmer: zwei miteinander verbundene Zimmer (Doppelbett) mit jeweils eigenem Bad –
+          separates Schlafzimmer für bis zu 4 Personen. Balkon/Terrasse mit Blick auf den Garten oder die
+          Alpi Apuane (Bergkette hinter Forte dei Marmi). Klimaanlage, Minibar, Safe, WLAN; ca. 300 m zum Strand,
+          Whirlpool, Fitnessraum, Garten mit Liegen. Frühstück für den gesamten Aufenthalt inklusive.
+        </div>
+        <a class="maps-btn" href="https://maps.google.com/?cid=12756505263893854947" target="_blank">📍 Auf Google Maps ansehen</a>
+      </div>
+
+      <div class="section-label">📸 Sightseeing</div>
+
+      <div class="place-block">
+        <div class="photo-grid">
+          <a href="https://maps.google.com/?cid=3669494377653533699" target="_blank"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjB1O35evD4s_ZIvVUH4wFgvyBPpS-dx3m2qSqh4SeLMeDLQeiCAxEVnlVY4Bb78mtirThtvKDif0Z3DRI8Bweaf5awSTll732pLBqTq-ch1aZe3TW2gtjyoaBUWo63MUZxG2OxDEVzCKfgx=s800-w800-h600" alt="Schiefer Turm Pisa"></a>
+          <a href="https://maps.google.com/?cid=3669494377653533699" target="_blank"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjAXUDRj6fT9YDMrvnV8u85dtcKoiPALmlQBmSGoeP4fRXtFtTlVUEHA0OLJ7ud6zL3N-hqr5OuiN3q3k64d1ccZ2SWEkgrk13eKZm7twxBSK5Z6LOX-_B8m2-Ls4ClDCP7QcDk3uLTPmJSmrrM=s800-w800-h600" alt="Schiefer Turm Pisa"></a>
+          <a href="https://maps.google.com/?cid=3669494377653533699" target="_blank"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjD1st2vnl55iVFkTBvAce03GIdUGnWkpO3rBI1XaPshBtvkzd2vZmxvHQxa_Nhk69bQNTyhAvKQQwUwJUqa1BRtxsYnNpmT4MKG4PK6AL50-PDs-jHmwAM3SdBL7kZQxXwddaS0neloByP3cQ=s800-w800-h600" alt="Schiefer Turm Pisa"></a>
+        </div>
+        <div class="place-name"><a href="https://maps.google.com/?cid=3669494377653533699" target="_blank">Schiefer Turm von Pisa</a></div>
+        <div class="place-desc">Piazza dei Miracoli – ein Muss</div>
+      </div>
+
+      <div class="place-block">
+        <div class="photo-grid">
+          <a href="https://maps.google.com/?cid=3014103695340255641" target="_blank"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjC9wxAdt1ILLPYdXzRTzsH1FyPOfpZjHAfPWi1UAR-TRbTtDynUs-fvsSpW5dlnMiAOfIhpn07PTkUAjaSW-0TiVl0UhbQjAwtoNpWPisM3cEx_zHHhF57ShFB8wogfqj_BN_KaJGmQ3yp-9IQ=s800-w800-h600" alt="Stadtmauer Lucca"></a>
+          <a href="https://maps.google.com/?cid=3014103695340255641" target="_blank"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjBam9_3riynBb2bat9lPUDwuS5TOf0yxd4X-p4P7Cw1V_4duXEcNsdsoMfdEb3UWkyMnODxpPwnK3VC7I6ANt02DMYgD9ITkS1v4gh4kkzKpyh9cCafBSwCbz0RvgnNBeVRqs8QhXEs5kRwfw=s800-w800-h600" alt="Stadtmauer Lucca"></a>
+          <a href="https://maps.google.com/?cid=3014103695340255641" target="_blank"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjCfCvBCmyGByMGE1cb--FCB_T6vPtyQ94JCjsG7Il8n_ebLAhaV5xFd6bxXZTIuOuxzABleSFZs_brAGdehFqeSCMwyjNARobxzrDuez_guvf9B94SA5_c8tqvtz945AJgFrmhNVlvOR7qUUqc=s800-w800-h600" alt="Stadtmauer Lucca"></a>
+        </div>
+        <div class="place-name"><a href="https://maps.google.com/?cid=3014103695340255641" target="_blank">Stadtmauer von Lucca</a></div>
+        <div class="place-desc">Vollständig begehbare Renaissance-Mauer</div>
+      </div>
+
+      <div class="place-block">
+        <div class="place-name">🏖️ Relaxen</div>
+        <div class="place-desc">Nutzen Sie die Zeit für entspannte Tage am Strand.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ABREISE -->
+  <div class="day">
+    <div class="day-header bg-departure">
+      <h2>Abreise</h2>
+      <span>30.10.2026</span>
+    </div>
+    <div class="day-body">
+      <div class="transfer" style="border:0; padding-bottom:0;">
+        <b>✈ Rückflug:</b> Fahrt zum <a href="https://maps.google.com/?cid=8722388230014382103" target="_blank">Flughafen Pisa</a>
+        für den Rückflug um 11:35 Uhr. Bitte prüfen, ob das Hotel an diesem Morgen ein frühes Frühstück
+        oder ein Frühstückspaket anbietet.
+      </div>
+      <div class="photo-grid" style="margin-top:14px;">
+        <a href="https://maps.google.com/?cid=8722388230014382103" target="_blank"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjBFw4SARpCcU8EcT80HGLWZPP2I9PUHl83HEVw5kNwatr6w1I_kHPIE_7pCAa-cjaHa0WgqoRuVx9tSgt0UDqoGZnUWRqUS0c4EEWJO-TkFvSeiHJ0omEmjlyB6xJ8KarDcvXsaHCGOeN8-=s800-w800-h600" alt="Flughafen Pisa"></a>
+        <a href="https://maps.google.com/?cid=8722388230014382103" target="_blank"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjCY2NaFNjacVEDn3Gid3EGFMWCcD7SEfTpa5XJ2tuwSIvY7RA-s4Z2JEMhvgrIPbWft8ALe55CO4VIoHZqzMKQ25MnQLvX8wwEoUhMWQyzw-4QWjuMw7ES5mxLSAZS3Pc5t4E7qCOYpIOvl=s800-w800-h600" alt="Flughafen Pisa"></a>
+        <a href="https://maps.google.com/?cid=8722388230014382103" target="_blank"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjAsCjJeKn5qas_Heh0vciPcZTXwxmkGlWizxlovEkpWZGy-MI8I9N8w2M2yCrJ32tzJrKdro-_XXPPf4Xsr4et_VNf-U5iUyj_ypZv-QyjokkMKoBojDDGi2w-09_zAtt5pvZX9GxDvhLDJ=s800-w800-h600" alt="Flughafen Pisa"></a>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<footer>
+  Route: Pisa → Florenz → Siena → Pienza → Forte dei Marmi → Pisa &nbsp;·&nbsp; Fotos &amp; Karten © Google Maps
+</footer>
+
+</body>
+</html>
