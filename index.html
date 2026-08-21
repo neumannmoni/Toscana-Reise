@@ -1,4 +1,4 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="de">
 <head>
 <meta charset="UTF-8">
@@ -85,7 +85,68 @@
 <div class="container">
 
   <div class="map-overview">
-    <iframe loading="lazy" src="https://www.google.com/maps/embed?pb=!1m76!1m12!1m3!1d742056.8!2d10.27!3d43.29!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m61!3e0!4m5!1s0x12d59180c9f0b2d1:0x790c25e1cb0e3017!2sPisa+Airport!3m2!1d43.6869635!2d10.3942843!4m5!1s0x132a56a680d2d6ad:0x93d57917efc72a03!2sFlorenz!3m2!1d43.7699685!2d11.2576706!4m5!1s0x132a4b16f30a3641:0x1a9d3563d136c85e!2sGreve+in+Chianti!3m2!1d43.5830644!2d11.3186815!4m5!1s0x132a3c3831446b6f:0x4c4ef55452f54491!2sSan+Gimignano!3m2!1d43.4672085!2d11.0434187!4m5!1s0x132a2cbf34bf5313:0x5d731212f12343e3!2sSiena!3m2!1d43.3184741!2d11.3305812!4m5!1s0x13296709c3dd8955:0x3ec38ba0023cdad7!2sPienza!3m2!1d43.0776004!2d11.6774515!4m5!1s0x1329034f02c33693:0xf5b08f1a9e24e0ed!2sSaturnia!3m2!1d42.658503!2d11.5161035!4m5!1s0x12d50a1f6762a15f:0x98ccab882f074164!2sForte+dei+Marmi!3m2!1d43.9580563!2d10.1674477!4m5!1s0x12d59180c9f0b2d1:0x790c25e1cb0e3017!2sPisa+Airport!3m2!1d43.6869635!2d10.3942843!5e0!3m2!1sde!2sde!4v1692000000000"></iframe>
+    <a href="https://maps.app.goo.gl/1DBysm6vvYk5qDaZ9" target="_blank" style="display:block;text-decoration:none;">
+      <svg viewBox="0 0 860 340" xmlns="http://www.w3.org/2000/svg" style="width:100%;display:block;background:#e8e0d0;">
+        <!-- Background landmass -->
+        <rect width="860" height="340" fill="#ddd8c4"/>
+        <!-- Sea -->
+        <polygon points="0,0 860,0 860,340 0,340" fill="#c8dce8" opacity="0.3"/>
+        <!-- Tuscany silhouette rough -->
+        <ellipse cx="430" cy="170" rx="340" ry="130" fill="#d4ccb0" opacity="0.6"/>
+
+        <!-- Route line -->
+        <polyline
+          points="195,80 310,95 355,155 300,195 370,220 430,230 480,280 195,80"
+          fill="none" stroke="#c1573a" stroke-width="3" stroke-dasharray="8,4" opacity="0.85"/>
+        <!-- Arrows along route -->
+        <polyline points="253,87 260,88 256,95" fill="none" stroke="#c1573a" stroke-width="2"/>
+        <polyline points="335,128 340,133 333,138" fill="none" stroke="#c1573a" stroke-width="2"/>
+
+        <!-- STOP dots -->
+        <!-- Pisa/Flughafen -->
+        <circle cx="195" cy="80" r="10" fill="#c1573a" stroke="white" stroke-width="2"/>
+        <text x="210" y="76" font-family="sans-serif" font-size="12" font-weight="bold" fill="#2b2118">Pisa ✈</text>
+        <text x="210" y="89" font-family="sans-serif" font-size="10" fill="#6f6a62">An/Abreise</text>
+
+        <!-- Florenz -->
+        <circle cx="310" cy="95" r="10" fill="#c1573a" stroke="white" stroke-width="2"/>
+        <text x="325" y="91" font-family="sans-serif" font-size="12" font-weight="bold" fill="#2b2118">Florenz</text>
+        <text x="325" y="104" font-family="sans-serif" font-size="10" fill="#6f6a62">Tag 1–2</text>
+
+        <!-- San Gimignano -->
+        <circle cx="280" cy="148" r="8" fill="#7a3b5c" stroke="white" stroke-width="2"/>
+        <text x="195" y="144" font-family="sans-serif" font-size="11" font-weight="bold" fill="#2b2118">San Gimignano</text>
+        <text x="215" y="157" font-family="sans-serif" font-size="10" fill="#6f6a62">Tag 3 Stopp</text>
+
+        <!-- Siena -->
+        <circle cx="370" cy="188" r="10" fill="#6b7a4a" stroke="white" stroke-width="2"/>
+        <text x="384" y="184" font-family="sans-serif" font-size="12" font-weight="bold" fill="#2b2118">Siena</text>
+        <text x="384" y="197" font-family="sans-serif" font-size="10" fill="#6f6a62">Tag 3–4</text>
+
+        <!-- Pienza -->
+        <circle cx="450" cy="218" r="9" fill="#b8862f" stroke="white" stroke-width="2"/>
+        <text x="463" y="214" font-family="sans-serif" font-size="12" font-weight="bold" fill="#2b2118">Pienza</text>
+        <text x="463" y="227" font-family="sans-serif" font-size="10" fill="#6f6a62">Tag 4–5</text>
+
+        <!-- Saturnia -->
+        <circle cx="450" cy="268" r="9" fill="#2e7a8a" stroke="white" stroke-width="2"/>
+        <text x="463" y="264" font-family="sans-serif" font-size="12" font-weight="bold" fill="#2b2118">Saturnia ♨</text>
+        <text x="463" y="277" font-family="sans-serif" font-size="10" fill="#6f6a62">Tag 5 Stopp</text>
+
+        <!-- Forte dei Marmi -->
+        <circle cx="195" cy="138" r="10" fill="#c1573a" stroke="white" stroke-width="2"/>
+        <text x="28" y="134" font-family="sans-serif" font-size="12" font-weight="bold" fill="#2b2118">Forte dei Marmi</text>
+        <text x="50" y="147" font-family="sans-serif" font-size="10" fill="#6f6a62">Tag 6–9</text>
+
+        <!-- Lucca -->
+        <circle cx="228" cy="108" r="7" fill="#6b7a4a" stroke="white" stroke-width="2"/>
+        <text x="238" y="112" font-family="sans-serif" font-size="10" fill="#2b2118">Lucca</text>
+
+        <!-- Click hint -->
+        <rect x="270" y="295" width="320" height="34" rx="17" fill="#c1573a" opacity="0.92"/>
+        <text x="430" y="317" font-family="sans-serif" font-size="13" font-weight="bold" fill="white" text-anchor="middle">📍 Route auf Google Maps öffnen →</text>
+      </svg>
+    </a>
   </div>
 
   <!-- TAG 1: ANKUNFT & FLORENZ ABEND -->
